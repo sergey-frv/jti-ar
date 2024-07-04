@@ -12,14 +12,12 @@
     </a-assets>
     <a-entity light="type: directional; color: #FFF; intensity: 1" position="-20 -6 15"></a-entity>
     <a-entity light="type: directional; color: #FFF; intensity: 2" position="-0.5 2 1"></a-entity>
-
     <a-camera fov="60" position="4 0.6 2.8" rotation="0 15 0" 
               wasd-controls-enabled="false" look-controls="enabled: false" 
               animation="property: position; to: 1.15 0.6 2.8; elasticity:10000; dur: 1000; easing: easeOutQuad; loop: once"></a-camera>
   
     <a-gltf-model cube-env-map="path: world/; extension: png; reflectivity: 0.01;"
-                  animation-mixer="loop: once; clampWhenFinished: true" rotation="0 -90 0" position="0 0 0" scale="0.01 0.01 0.01" src="#text"
-                  animation="property: rotation; to: 0 -92 0; dur: 2000; elasticity:5000; easing: easeInOutQuad; loop: true; dir: alternate">
+                  animation-mixer="loop: once; clampWhenFinished: true" rotation="0 -90 0" position="0 0 0" scale="0.01 0.01 0.01" src="#text">
    
 </a-scene>
 </body>
