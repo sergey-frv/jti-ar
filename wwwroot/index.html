@@ -3,18 +3,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="aframe-master.min.js"></script>
     <script src="aframe-extras.min.js"></script>
-    <script src="mindar-image-aframe.prod.js"></script>
 </head>
 <body>
 <a-scene mindar-image="imageTargetSrc: red.mind; filterMinCF:0.0001; filterBeta: 0.001" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
     <a-assets>
         <a-asset-item id="text" src="red.glb"></a-asset-item>
     </a-assets>
-
-    <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>;
+    <a-camera fov="60" position="1 0.6 1.5" rotation="0 15 0" look-controls="enabled: false"></a-camera>;
     <a-entity mindar-image-target="targetIndex: 0">
-        <a-gltf-model cube-env-map="path: world/; extension: png; reflectivity: 0.9;"
-                rotation="0 0 0" position="0 0 0.1" scale="1 1 1" src="#text" animation="property: position; to: 0 0.1 0.1; dur: 1000; easing: easeInOutQuad; loop: true; dir: alternate">
+        <a-gltf-model cube-env-map="path: world/; extension: png; reflectivity: 0.01;"
+                      animation-mixer="loop: once; clampWhenFinished: true" rotation="0 -90 0" position="0 0 0" scale="0.01 0.01 0.01" src="#text">
     </a-entity>
 </a-scene>
 </body>
