@@ -12,6 +12,8 @@ body {
     height: 100%; /* Adjust height automatically */
 }
 .menu {
+    padding-top: 6%;
+    padding-left: 6%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -25,6 +27,11 @@ body {
     min-height: 150px; /* Примерная минимальная высота, может быть изменена */
 }
 .preview {
-    width: 100%;
+    width: 85%;
     cursor: pointer;
+    transition: transform 0.5s ease; /* Добавляем плавность анимации */
+}
+
+.preview:active {
+    transform: scale(0.95); /* Уменьшаем масштаб при нажатии */
 }
