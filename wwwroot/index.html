@@ -1,7 +1,12 @@
-<html>
+<html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="stylesheet" href="menu.css?v4=true">
+        <link rel="preload" as="image" href="royal/preview.jpg" fetchpriority="high">
+        <link rel="preload" as="image" href="bronze/preview.jpg" fetchpriority="high">
+        <link rel="preload" as="image" href="red/preview.jpg" fetchpriority="high">
+        <link rel="preload" as="image" href="gold/preview.JPG" fetchpriority="high">
+        <title>JTI</title>
     </head>
     <body>
         <div class="menu" id="menu">
@@ -9,35 +14,35 @@
                 <img style="padding-top:12%" src="gold/preview.JPG" alt="Gold" class="preview" data-video="gold">
             </div>
             <div class="item">
-                <img src="royal/preview.png" alt="Royal" class="preview" data-video="royal">
+                <img src="royal/preview.jpg" alt="Royal" class="preview" data-video="royal">
             </div>
             <div class="item">
-                <img src="red/preview.png" alt="Red" class="preview" data-video="red">
+                <img src="red/preview.jpg" alt="Red" class="preview" data-video="red">
             </div>
             <div class="item">
-                <img src="bronze/preview.png" alt="Bronze" class="preview" data-video="bronze">
+                <img src="bronze/preview.jpg" alt="Bronze" class="preview" data-video="bronze">
             </div>
         </div>
         <div class="video-container">
-            <video id="gold" autoplay muted playsinline>
+            <video id="gold" muted playsinline preload="auto">
                 <source src="gold/video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
         <div class="video-container">
-            <video id="bronze" autoplay muted playsinline>
+            <video id="bronze" muted playsinline preload="auto">
                 <source src="bronze/video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
         <div class="video-container">
-            <video id="red" autoplay muted playsinline>
+            <video id="red" muted playsinline preload="auto">
                 <source src="red/video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
         <div class="video-container">
-            <video id="royal" autoplay muted playsinline>
+            <video id="royal" muted playsinline preload="auto">
                 <source src="royal/video.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
